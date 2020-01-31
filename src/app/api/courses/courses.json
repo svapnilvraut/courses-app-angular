@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "courseName": "Getting started with React",
+    "description": "This course outlines the baics on React and helps you getting started with React library",
+    "courseDuration": "1hr 30min",
+    "price": "300.00",
+    "author": "Brian Lorent",
+    "courseLevel": "Beginner",
+    "type": "online"
+  },
+  {
+    "id": 2,
+    "courseName": "React Hooks fundamentals",
+    "description": "This course of for learning the basics on react hooks, the functional way of creating components",
+    "courseDuration": "1hr 45min",
+    "price": "300.00",
+    "author": "Brian Lorent",
+    "courseLevel": "Beginner",
+    "type": "online"
+  },
+  {
+    "id": 3,
+    "courseName": "AngularJS",
+    "description": "Getting started with Angular1.x, a powerful framework developed by Google. Join this course to know more about the Angular framework",
+    "courseDuration": "3hr 45min",
+    "price": "200.00",
+    "author": "Brad Pitt",
+    "courseLevel": "Beginner",
+    "type": "online"
+  },
+  {
+    "id": 4,
+    "courseName": "Upgrade to Angular",
+    "description": "Guide to upgrade the Angual1.x application to Angular2.x, learn about components, templates, services and directives",
+    "courseDuration": "3hr 45min",
+    "price": "450.00",
+    "author": "Brad Pitt",
+    "courseLevel": "Beginner",
+    "type": "online"
+  }
+]

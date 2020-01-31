@@ -1,0 +1,42 @@
+<div class="card" *ngIf="course">
+  <div class="card-header">Course Details: {{ course.courseName }}</div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-3">
+        Name:
+      </div>
+      <div class="col-9 course-text">
+        {{ course.courseName }}
+      </div>
+      <div class="col-3">
+        Description
+      </div>
+      <div class="col-9 course-text">
+        {{ course.description }}
+      </div>
+      <div class="col-3">
+        Author
+      </div>
+      <div class="col-9 course-text">
+        {{ course.author }}
+      </div>
+      <div class="col-3">
+        Duration
+      </div>
+      <div class="col-9 course-text">
+        {{ course.courseDuration }}
+      </div>
+      <div class="col-3">
+        Price
+      </div>
+      <div class="col-9 course-text">
+        {{ course.price | currency: 'INR':'symbol':'1.2-2' }}
+      </div>
+    </div>
+  </div>
+  <div class="card-footer">
+    <button class="btn btn-outline-primary" (click)="onBackClick()">
+      Back
+    </button>
+  </div>
+</div>

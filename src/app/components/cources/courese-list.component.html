@@ -1,0 +1,42 @@
+<div>
+  <div class="card">
+    <div class="card-header">
+      {{ pageTitle }}
+    </div>
+    <div class="card-body table-responsive-sm">
+      <table class="table">
+        <thead>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Author</th>
+          <th>Price</th>
+          <th>Level</th>
+          <th>Mode</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let course of coursesList">
+            <th>
+              <a
+                [routerLink]="['/course', course.id]"
+                [title]="course.description"
+                >{{ course.courseName }}</a
+              >
+            </th>
+            <th>
+              {{ course.author }}
+            </th>
+            <th>{{ course.courseDuration }}</th>
+            <th>{{ course.price | currency: 'INR':'symbol':'1.2-2' }}</th>
+            <th>{{ course.courseLevel }}</th>
+            <th>{{ course.type }}</th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="py-3">
+    <button class="btn btn-primary" (click)="redirectToCreateCourse()">
+      Add Course
+    </button>
+  </div>
+</div>

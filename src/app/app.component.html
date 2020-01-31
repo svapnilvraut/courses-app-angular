@@ -1,0 +1,33 @@
+<div>
+  <div>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <a class="navbar-brand">Star online courses</a>
+      <ul class="nav nav-pills">
+        <li>
+          <a
+            class="nav-link"
+            [routerLink]="['/welcome']"
+            routerLinkActive="active"
+            >Welcome</a
+          >
+        </li>
+        <li>
+          <a
+            class="nav-link"
+            [routerLink]="['/courses']"
+            routerLinkActive="active"
+            >Courses</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="py-3">
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <footer class="footer-copyright text-center py-3">
+    © 2020 Copyright: Learning is key to grow
+  </footer>
+</div>
